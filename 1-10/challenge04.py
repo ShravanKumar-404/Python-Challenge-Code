@@ -4,3 +4,4 @@ Write a Python program that prints the first and last three characters of the st
 If the string has less than six characters, print an empty string (blank output).
 
 """
+
