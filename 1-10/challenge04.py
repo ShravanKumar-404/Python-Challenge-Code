@@ -5,3 +5,9 @@ If the string has less than six characters, print an empty string (blank output)
 
 """
 
+word = "ShravanKumar"
+
+if len(word) < 6:
+  print (" ")
+else:
+  print(word[0] + word[len(word)-3:])
