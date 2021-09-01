@@ -6,8 +6,11 @@ If the string has less than six characters, print an empty string (blank output)
 """
 
 word = "ShravanKumar"
+charss = 7
 
-if len(word) < 6:
-  print (" ")
+if len(word) < charss*2:
+  print (" oh no ")
 else:
-  print(word[0] + word[len(word)-3:])
+  print(word[:charss] + word[len(word)-charss:])
+  
+  
