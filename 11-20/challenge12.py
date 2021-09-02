@@ -14,11 +14,5 @@ If the length of the prefix is greater than the length of the string, print Fals
 word = "Shravan"
 prefixx = "Sh"
 
-matched = ""
-
-if len(word) > len(prefixx):
-  for i in word[:len(prefixx)]:
-    matched += i  
-  print(matched == prefixx)
-else:
-  print(False)
+print(word[:len(prefixx)] == prefixx)
+print(word.startswith(prefixx))
