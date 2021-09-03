@@ -14,6 +14,9 @@ split_word = list(word.split(" "))
 result = ""
 
 for i in split_word:
-  x = (list(i.lower()))
-  print(x)
+  x = list(i.lower())
+  x.sort()
+  result += f'{"".join(x)} '
   
+
+print(result)
