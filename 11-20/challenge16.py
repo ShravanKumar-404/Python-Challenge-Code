@@ -8,7 +8,7 @@ Spaces should be preserved in the final string.
 
 """
 
-word = "Hello World"
+word = "Shravan Kumar"
 split_word = list(word.split(" "))
 
 result = ""
@@ -16,7 +16,7 @@ result = ""
 for i in split_word:
   x = list(i.lower())
   x.sort()
-  result += f'{"".join(x)} '
+  result += (f'{"".join(x)} ')
   
 
 print(result)
