@@ -9,13 +9,30 @@ Therefore, "A" should not be considered the same element as "a".
 
 """
 
-listA = ["a", "a", "b", "c", "a", "b"]
-listN = 0
-listB = set(listA)
-result = dict.fromkeys(listB, listN)
+# my method
+
+# listA = ["a", "a", "b", "c", "a", "b", "d", "e", "d", "f"]
+# listAA = [1, 2, 3, 4, 5, 1, 2, 7, 4, 5]
+
+# listN = 0
+# result = dict.fromkeys(listAA, listN)
+# listB = list(result)
+
+# for i in listAA:
+#     if i in listB:
+#         result[i] += 1
+
+# print(result)
+
+# method 2
+
+listA = ["a", "a", "b", "c", "a", "b", "d", "e", "d", "f"]
+result = {}
 
 for i in listA:
-    if i in result.keys():
-        result.update({i: listN + 1})
+    if i not in result:
+        result[i] = 1
+    else:
+        result[i] += 1
 
 print(result)
