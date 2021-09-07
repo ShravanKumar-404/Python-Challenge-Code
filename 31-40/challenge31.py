@@ -12,10 +12,23 @@ If the list is empty, print an empty list.
 """
 
 listA = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-listB = [1, 2, 3, 4, 5, 6, [7, 8, 9]]
+listB = [1, [2], 3, [4, 5], 6, [7, [8], 9]]
 result = []
 
-listC = str(listB)
-listD = listC.replace("[", "")
-listE = list(listD.replace("]", ""))
-print(listC)
+
+def list_iteration(repeat_word):
+    if isinstance(repeat_word, list):
+        for x in repeat_word:
+            return x
+    else:
+        result.append(repeat_word)
+
+
+for i in listA:
+    if isinstance(i, list):
+        for x in i:
+            result.append(list_iteration(x))
+    else:
+        result.append(i)
+
+print(list(filter(None, result)))
