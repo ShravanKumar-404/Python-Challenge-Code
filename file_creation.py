@@ -13,6 +13,8 @@ versionEnd = int(input("Enter the version to end : "))
 def file_creation(version):
     filename = f"challenge{version}.py"
     file = open(filename, "a")
+    file.write(f"# Welcome to the python challenges of version {version}.")
+    file.close()
 
 
 for i in range(versionStart, versionEnd + 1):
