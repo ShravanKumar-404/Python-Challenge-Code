@@ -7,7 +7,6 @@ The value of n should be entered by the user. You may assume that it is a positi
 
 Floyd's Triangle is made with consecutive numbers that fill the rows of the triangle (as shown below).
 """
-
 rows = int(input("Enter th number of rows : "))
 letters = "*"
 number = 2
