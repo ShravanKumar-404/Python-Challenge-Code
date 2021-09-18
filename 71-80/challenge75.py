@@ -9,11 +9,14 @@ If the integer has only one digit, print the integer as the total sum.
 
 """
 
-num = input("Enter the number : ")
+num = int(input("Enter the number : "))
 
 
-def sums(n):
-    if len(n) == 1:
-        return n
+def sums(num):
+    if num == 0:
+        return 0
     else:
-        return
+        return (num % 10) + sums(num // 10)
+
+
+print(sums(num))
