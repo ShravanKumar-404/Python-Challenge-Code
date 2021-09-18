@@ -15,9 +15,14 @@ The letters must be separated by a space.
 """
 
 rows = int(input("Enter the number of rows : "))
-letters = ""
-for x in range(65, 91):
-    letters += chr(x)
-print(letters)
-for x in range(1, rows+1):
-    pass
+# letters = ""
+# for x in range(65, 91):
+#     letters += chr(x)
+
+# number = 1
+# for x in range(0, rows):
+#     print(letters[x]*number)
+#     number += 1
+
+for i in range(0, rows):
+    print(chr(65+i)*(i+1))
