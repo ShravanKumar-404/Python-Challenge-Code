@@ -9,13 +9,13 @@ The initial value of n should be 0.
 
 You may assume that the value of n is a non-negative integer.
 """
-n = 10
+n = int(input("Enter the number : "))
 lists = []
 
-for x in range(0, n):
+for x in range(0, n+1):
     if x == 0 or x == 1:
         lists.append(x)
     else:
         lists.append((lists[-1] + lists[-2]))
 
-print(lists)
+print(lists[n])
