@@ -1,2 +1,2 @@
-for x in range(7, 0, -2):
-    print(x)
+for x, y in enumerate(range(1, 21)):
+    print(x, y)

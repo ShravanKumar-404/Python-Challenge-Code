@@ -7,11 +7,15 @@ The value of n should be entered by the user. You may assume that it is a positi
 
 Floyd's Triangle is made with consecutive numbers that fill the rows of the triangle (as shown below).
 """
+
 rows = int(input("Enter th number of rows : "))
-letters = "*"
-number = 1
-lists = [i*letters for i in range(1, rows+1)]
-list3 = []
+
+#                   my method
+
+# letters = "*"
+# number = 2
+# lists = [i*letters for i in range(1, rows+1)]
+# list3 = []
 
 # for x in lists:
 #     if len(x) == 1:
@@ -25,8 +29,13 @@ list3 = []
 #         z = y.replace(",", "")
 #         print(z)
 
-for i in range(1, rows+1):
-    for x in range(0, i):
-        print(number, end=" ")
-        number += 1
+#                          method 2
+
+count = 1
+
+for x in range(1, rows+1):
+    for y in range(0, x):
+        print(count, end=" ")
+        count += 1
+
     print()
