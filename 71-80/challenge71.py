@@ -24,7 +24,7 @@ def odd_check(num):
 
 
 def odd_number_above(num):
-    letter = "@"
+    letter = "*"
     space = " "
     for x in range(1, num+1, 2):
         print(f"{space*(round((num-x)/2))}{letter*x}")
