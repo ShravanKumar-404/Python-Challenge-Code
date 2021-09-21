@@ -5,7 +5,8 @@ is determined by the value of the variable height
 
 You can (optionally) ask the user to enter the value of height.
 
-This value can only have an odd number of rows, so you should print a descriptive message if the user enters an even value.
+This value can only have an odd number of rows, so you should print a descriptive message if the user enters an even
+value.
 
 """
 
